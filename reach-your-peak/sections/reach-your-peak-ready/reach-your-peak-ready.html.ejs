@@ -1,0 +1,31 @@
+<div class="reach-your-peak-ready">
+  <div class="ready__container">
+    <div></div>
+    <div class="ready__content">
+	  <% if(!restrictionService.isRestricted({enabledLanguages: ['es']}, restrictionState)) { %>
+		<div class="ready__content_text ready__content_text-es"></div>
+	  <% } else if(!restrictionService.isRestricted({enabledLanguages: ['ar']}, restrictionState)) { %>
+		<div class="ready__content_text ready__content_text-ar"></div>
+	  <% } else if(!restrictionService.isRestricted({enabledLanguages: ['vi']}, restrictionState)) { %>
+		<div class="ready__content_text ready__content_text-vi"></div>
+	  <% } else if(!restrictionService.isRestricted({enabledLanguages: ['th']}, restrictionState)) { %>
+		<div class="ready__content_text ready__content_text-th"></div>
+	  <% } else if(!restrictionService.isRestricted({enabledLanguages: ['id']}, restrictionState)) { %>
+		<div class="ready__content_text ready__content_text-id"></div>
+	  <% } else if(!restrictionService.isRestricted({enabledLanguages: ['ru']}, restrictionState)) { %>
+		<div class="ready__content_text ready__content_text-ru"></div>
+	  <% } else if(!restrictionService.isRestricted({enabledLanguages: ['ms']}, restrictionState)) { %>
+		<div class="ready__content_text ready__content_text-ms"></div>
+	  <% } else { %>
+	    <div class="ready__content_text ready__content_text-en"></div>
+	  <% } %>
+      <h3 class="ready__text"><%- i18n.fx('reach_your_peak_text_23')%></h3>
+      <a href="javascript:void(0)"
+         rel="nofollow noopener"
+         class="ready__btn direct-register-link">
+        <%- i18n.fx('reach_your_peak_text_24')%>
+          <i class="fx-symbol-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</div>

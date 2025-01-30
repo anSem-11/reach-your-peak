@@ -1,0 +1,156 @@
+.reach-your-peak-expedition {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.expedition__container {
+  margin: auto;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1180px;
+}
+
+.expedition__area_title {
+  margin: 0 0 30px;
+  color: #000;
+  font: 300 40px/110% Fraunces, serif;
+  letter-spacing: -1.2px;
+}
+
+.expedition__area.expedition__area_1 .expedition__area_title {
+  margin: 0;
+}
+
+.expedition__area_text-subtitle {
+  margin: 0 0 10px;
+  color: #000;
+  font: 500 18px/150% Inter, sans-serif;
+  letter-spacing: -0.54px;
+}
+
+.expedition__area_text {
+  color: #000;
+  font: 300 16px/150% Inter, sans-serif;
+  letter-spacing: -0.48px;
+}
+
+.expedition__area {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.expedition__area_text-wrapper-outer {
+  display: flex;
+}
+
+.expedition__area_text-wrapper {
+  max-width: 270px;
+}
+
+@media (max-width: 1200px) {
+  .expedition__area_text-wrapper {
+    max-width: 200px;
+  }
+}
+
+.expedition__area_text-wrapper:first-child {
+  margin: 0 30px 0 0;
+}
+
+[lang=ar] .expedition__area_text-wrapper:first-child {
+  margin: 0 0 0 30px;
+}
+
+.expedition__area.expedition__area_1 {
+  position: relative;
+  min-height: 476px;
+}
+
+.expedition__area.expedition__area_1::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: -165px;
+  width: 735px;
+  height: 190px;
+  background: center bottom / cover no-repeat url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/reach-your-peak-outline.webp");
+}
+
+.expedition__area.expedition__area_2 {
+  margin: 150px 0 -150px;
+  position: relative;
+}
+
+.expedition__area.expedition__area_2::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: #F41112;
+}
+
+.expedition__area.expedition__area_2 .expedition__area_title,
+.expedition__area.expedition__area_2 .expedition__area_text-subtitle,
+.expedition__area.expedition__area_2 .expedition__area_text {
+  color: #FFF;
+}
+
+.expedition__area.expedition__area_2 .expedition__area_title-wrapper {
+  margin: 50px 0 0 20px;
+}
+
+[lang=ar] .expedition__area.expedition__area_2 .expedition__area_title-wrapper {
+  margin: 50px 20px 0 0;
+}
+
+.expedition__area.expedition__area_2 .expedition__area_text-wrapper-outer {
+  margin: 0 0 70px 20px;
+}
+
+[lang=ar] .expedition__area.expedition__area_2 .expedition__area_text-wrapper-outer {
+  margin: 0 20px 70px 0;
+}
+
+.expedition__area.expedition__area_1 .expedition__area_title,
+.expedition__area.expedition__area_3 .expedition__area_title-wrapper {
+  max-width: 470px;
+}
+
+.expedition__area.expedition__area_2 .expedition__area_title-wrapper {
+  max-width: 370px;
+}
+
+@media (max-width: 1000px) {
+  .reach-your-peak-expedition {
+    padding: 50px 0;
+  }
+
+  .expedition__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .expedition__area.expedition__area_2 {
+    margin: 0;
+  }
+
+  .expedition__area.expedition__area_2::after {
+    left: -100%;
+  }
+
+  .expedition__area.expedition__area_1 {
+    min-height: 560px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .expedition__area.expedition__area_1 {
+    min-height: 664px;
+  }
+}

@@ -1,0 +1,199 @@
+.reach-your-peak-hero {
+  padding: 170px 0 0;
+}
+
+.hero__container_text {
+  margin: auto;
+  padding: 0 10px;
+  max-width: 1180px;
+}
+
+.hero__title {
+  margin: 0 0 30px;
+  position: relative;
+  z-index: 5;
+  max-width: 670px;
+  color: #000;
+  font: 300 82px/110% Fraunces, serif;
+  letter-spacing: -2.46px;
+}
+
+.hero__subtitle {
+  margin: 0 0 30px;
+  position: relative;
+  z-index: 5;
+  max-width: 670px;
+  min-height: 144px;
+  color: #000;
+  font: 300 24px/150% Inter, sans-serif;
+  letter-spacing: -0.72px;
+}
+
+.hero__btn {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 310px;
+  width: fit-content;
+  height: 50px;
+  color: #FFF;
+  background-color: #0056FF;
+  border: 1px solid #0056FF;
+  font: 500 16px Inter, sans-serif;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.hero__btn i {
+  margin-left: 5px;
+}
+
+.hero__btn:hover {
+  background-color: transparent;
+  color: #0056FF;
+}
+
+.hero__container_bg {
+  margin: -300px 0 0;
+  position: relative;
+  height: 759px;
+  background: center top / cover no-repeat url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/reach-your-peak-mountain.webp");
+}
+
+.hero__inner-cross {
+  position: absolute;
+  z-index: 5;
+  top: 204px;
+  left: calc(50% - 100px/2);
+  right: calc(50% - 100px/2);
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: no-repeat url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/reach-your-peak-cross.webp");
+}
+
+.hero__inner-circle {
+  position: absolute;
+  top: 70px;
+  left: calc(50% - 369px/2);
+  right: calc(50% - 369px/2);
+  width: 369px;
+  height: 369px;
+  border-radius: 100%;
+  background: #F7C46C;
+  mix-blend-mode: exclusion;
+}
+
+.hero__outer-circle {
+  position: absolute;
+  z-index: -1;
+  top: -160px;
+  left: calc(50% - 831px/2);
+  right: calc(50% - 831px/2);
+  width: 831px;
+  height: 831px;
+  border-radius: 100%;
+  background: #F41112;
+}
+
+.hero__play-button_wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 184px;
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+}
+
+.hero__play-button {
+  position: absolute;
+  z-index: 1;
+  bottom: -13px;
+  left: calc(50% - 214px/2);
+  right: calc(50% - 214px/2);
+  width: 214px;
+  height: 214px;
+  background: url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/reach-your-peak-play.webp");
+  cursor: pointer;
+}
+
+.hero__video {
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 170px/2);
+  right: calc(50% - 170px/2);
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  transition: all 0.5s ease;
+}
+
+.hero__video._playing {
+  z-index: 10;
+  left: calc(50% - 600px/2);
+  right: calc(50% - 600px/2);
+  width: 600px;
+  height: 600px;
+  transition: all 0.5s ease;
+}
+
+._hidden {
+  display: none;
+}
+
+@media (max-width:850px) {
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__container_bg {
+    margin: -50px 0 0;
+  }
+
+  .hero__inner-circle {
+    position: absolute;
+    top: 160px;
+    left: calc(50% - 185px/2);
+    right: calc(50% - 185px/2);
+    width: 185px;
+    height: 185px;
+  }
+
+  .hero__outer-circle {
+    position: absolute;
+    z-index: -1;
+    top: 105px;
+    left: calc(50% - 299px/2);
+    right: calc(50% - 299px/2);
+    width: 299px;
+    height: 299px;
+  }
+
+  .hero__title {
+    font: 300 40px/110% Fraunces, serif;
+    letter-spacing: -1.2px;
+  }
+
+  .hero__subtitle {
+    font: 300 18px/150% Inter, sans-serif;
+    letter-spacing: -0.54px;
+    min-height: unset;
+  }
+
+  .hero__btn {
+    min-width: 300px;
+  }
+}
+
+@media (max-width:650px) {
+  .hero__video._playing {
+    left: calc(50% - 300px/2);
+    right: calc(50% - 300px/2);
+    width: 300px;
+    height: 300px;
+    transition: all 0.5s ease;
+  }
+}

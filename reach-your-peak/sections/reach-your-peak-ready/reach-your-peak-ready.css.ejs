@@ -1,0 +1,135 @@
+.reach-your-peak-ready {
+	padding: 300px 0 174px;
+}
+
+.ready__container {
+	margin: auto;
+	padding: 0 10px;
+	display: flex;
+	max-width: 1180px;
+}
+
+.ready__container>div {
+	flex: 1 1 0;
+}
+
+.ready__content {
+	position: relative;
+}
+
+.ready__content_text {
+	content: "";
+	position: absolute;
+	z-index: -5;
+	top: -190px;
+	left: -35%;
+	width: 791px;
+	height: 533px;
+}
+
+.ready__content_text-en {
+	background: center top / cover no-repeat url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/words-en.webp");
+}
+
+.ready__content_text-es {
+	background: center top / cover no-repeat url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/words-es.webp");
+}
+
+.ready__content_text-ar {
+	left: unset;
+	right: -38%;
+	background: center top / cover no-repeat url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/words-ar.webp");
+}
+
+.ready__content_text-ru {
+	background: center top / cover no-repeat url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/words-ru.webp");
+}
+
+.ready__content_text-vi {
+	background: center top / cover no-repeat url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/words-vi.webp");
+}
+
+.ready__content_text-th {
+	background: center top / cover no-repeat url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/words-th.webp");
+}
+
+.ready__content_text-ms {
+	background: center top / cover no-repeat url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/words-ms.webp");
+}
+
+.ready__content_text-id {
+	background: center top / cover no-repeat url("https://direct-landings.azureedge.net/assets/img/pages/reach-your-peak/words-id.webp");
+}
+
+.ready__content_text>div {
+	color: #000;
+	padding: 0 0 660px;
+	position: absolute;
+	border-radius: 50%;
+	font: 300 25px/150% monospace;
+	letter-spacing: -0.75px;
+}
+
+.ready__btn {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 310px;
+	width: fit-content;
+	height: 50px;
+	color: #FFF;
+	background-color: #0056FF;
+	border: 1px solid #0056FF;
+	font: 500 16px Inter, sans-serif;
+	text-align: center;
+	transition: 0.3s all ease-in-out;
+}
+
+.ready__btn i {
+	margin-left: 5px;
+}
+
+.ready__btn:hover {
+	background-color: transparent;
+	color: #0056FF;
+}
+
+.ready__text {
+	margin: 0 0 30px;
+	max-width: 370px;
+	color: #000;
+	font: 300 40px/110% Fraunces, serif;
+	letter-spacing: -1.2px;
+}
+
+@media (max-width: 1200px) {
+	.ready__container {
+		justify-content: center;
+	}
+
+	.ready__container>div {
+		flex: unset;
+	}
+
+	.ready__content_text-ar,
+	.ready__content_text {
+		right: unset;
+		left: -60%;
+	}
+}
+
+@media (max-width: 850px) {
+	.reach-your-peak-ready {
+		padding: 300px 0 40px;
+	}
+
+	.ready__content_text {
+		display: none;
+	}
+
+	.ready__btn {
+		min-width: 300px;
+	}
+}
